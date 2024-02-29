@@ -35,6 +35,7 @@ class Program
         // "help" => help function, used as an argument
         static void HelpPrint()
         {
+            Console.WriteLine("Dont forget to put in a text to be decorated!");
             Console.WriteLine("Choose [DECORATIONTYPE] then write your [TEXT]");
             Console.WriteLine("Decoration alternatives: block, alternating, pig");
             Console.WriteLine("I.E. \"block Hi\" or \"alternating My gf a big yapper and a lil napper\"");

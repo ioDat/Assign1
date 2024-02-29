@@ -58,7 +58,7 @@
   <component name="RunManager">
     <configuration name="Assignment1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/net8.0/Assignment1.exe" />
-      <option name="PROGRAM_PARAMETERS" value="BLoCK HEI block DER" />
+      <option name="PROGRAM_PARAMETERS" value="Block hei på deig" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin/Debug/net8.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
