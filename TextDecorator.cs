@@ -1,26 +1,25 @@
-﻿using System.Runtime.CompilerServices;
+﻿namespace TextDecorator;
 
-namespace Assignment1;
-
-class TextDecorator
+class Program
 {
     static void Main(string[] args)
     {
+        // unknown decoration argument or too few arguments => feedback from system
         if (args.Length < 2)
         {
-            Console.WriteLine("Not enough arguments");
+            Console.WriteLine("You needa put in >2 arguments ");
+            Console.WriteLine("Example: block Hello World");
             return;
         }
-
-        Console.WriteLine("skriv noe");
-        //string hei = Console.ReadLine();
-
-        // decoration type applied to desired
-        // not case sensitive
-
-        // unknown decoration argument or too few arguments => feedback from system
+        
+       
         // "help" => help function, used as an argument
-
+        static void HelpPrint();
+        {
+            Console.WriteLine("Choose DECORATIONTYPE then write your TEXT");
+            Console.WriteLine("Decoration alternatives: block, alternating, pig");
+            Console.WriteLine("I.E. block Hi Hiii");
+        }
 
         // Block mode - # Around text #
         static void BlockMode(string text)
