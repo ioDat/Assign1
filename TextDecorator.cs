@@ -6,15 +6,15 @@ class TextDecorator
 {
     static void Main(string[] args)
     {
-        /*if (args.Length < 2)
+        if (args.Length < 2)
         {
             Console.WriteLine("Not enough arguments");
             return;
         }
-        */
+
         Console.WriteLine("skriv noe");
-        string hei = Console.ReadLine();
-        
+        //string hei = Console.ReadLine();
+
         // decoration type applied to desired
         // not case sensitive
 
@@ -30,9 +30,9 @@ class TextDecorator
             Console.WriteLine($"# {text} #");
             Console.WriteLine(blocks);
         }
-        
-        
-        // Alternate Case Mode - sPoNgE BoB
+
+
+        // Alternate Case Mode - sPoNgE bOb
         static void AltMode(string text)
         {
             char[] chars = text.ToCharArray();
@@ -55,13 +55,50 @@ class TextDecorator
 
             Console.WriteLine(new string(chars));
         }
-        BlockMode(hei);
-        AltMode(hei);
-
-        //  Pig Latin - Where is my hat? = Erewhay isyay ymay athay?
-
         
+        // Pig Latin - Where is my hat? = Erewhay isyay ymay athay?
+        // From what I get of pig latin its supposed to be "Hereway isyay ymay athay?" and not what's in the description
+        static void PigMode(string text)
+        {
+            string[] words = text.Split(' ');
+            foreach (string word in words)
+            {
+                string onlyWord = word.TrimEnd(',', '.', '?', ';', ':');
+                string punctation = word.Substring(onlyWord.Length);
+                if (onlyWord.Length > 1)
+                {
+                    string firstLetter = onlyWord.Substring(0, 1);
+ 
+                    string restOfWord = onlyWord.Substring(1);
+
+                    string pigWord;
+
+                    if (isVowel(firstLetter[0]))
+                    {
+                        pigWord = firstLetter + restOfWord + "yay";
+                    }
+                    else
+                    {
+                        pigWord = restOfWord + firstLetter.ToLower() + "ay";
+                    }
+
+                    if (char.IsUpper(word[0]))
+                    {
+                        pigWord = char.ToUpper(pigWord[0]) + pigWord.Substring(1);
+                    }
+
+                    Console.Write(pigWord + punctation + " ");
+                }
+                else
+                {
+                    Console.Write(word + " ");
+                }
+            }
+
+            static bool isVowel(char letter)
+            {
+                return "aeiouAEIOU".IndexOf(letter) != -1;
+            }
+        }
     }
 }
-
-
