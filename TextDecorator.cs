@@ -7,7 +7,7 @@ class Program
         // unknown decoration argument or too few arguments => feedback from system
         if (args.Length < 2)
         {
-            Console.WriteLine("You needa put in >2 arguments ");
+            Console.WriteLine("You need to put in 2 or more arguments ");
             Console.WriteLine("Example: block Hello World");
             return;
         }
