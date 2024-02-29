@@ -11,10 +11,32 @@ class Program
             Console.WriteLine("Example: block Hello World");
             return;
         }
+
+        string decorationType = args[0].ToLower();
+        string text = string.Join(" ", args[1]);
+
+        switch (decorationType)
+        {
+            case "block":
+                BlockMode(text);
+                break;
+            case "alternating":
+                AltMode(text);
+                break;
+            case "pig":
+                PigMode(text);
+                break;
+            case "help":
+                HelpPrint();
+                break;
+            default:
+                Console.WriteLine("Please pick between the decoration types: Block, Alternating or Pig");
+                break;
+            
+        }
         
-       
         // "help" => help function, used as an argument
-        static void HelpPrint();
+        static void HelpPrint()
         {
             Console.WriteLine("Choose DECORATIONTYPE then write your TEXT");
             Console.WriteLine("Decoration alternatives: block, alternating, pig");
