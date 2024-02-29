@@ -4,14 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        // unknown decoration argument or too few arguments => feedback from system
+        // Unknown decoration argument or too few arguments => feedback from system
         if (args.Length < 2 || args[0].ToLower() == "help")
         {
             HelpPrint();
             return;
         }
 
-        // Decoration cases
+        // Cases for the decoration
         string decorationType = args[0].ToLower();
         string text = string.Join(" ", args[1..]);
 
@@ -35,12 +35,12 @@ class Program
         // "help" => help function, used as an argument
         static void HelpPrint()
         {
-            Console.WriteLine("Choose DECORATIONTYPE then write your TEXT");
+            Console.WriteLine("Choose [DECORATIONTYPE] then write your [TEXT]");
             Console.WriteLine("Decoration alternatives: block, alternating, pig");
-            Console.WriteLine("I.E. \"block Hi\" or \"block My gf a big yapper and a lil napper\"");
+            Console.WriteLine("I.E. \"block Hi\" or \"alternating My gf a big yapper and a lil napper\"");
         }
 
-        // Block mode - # Around text #
+        // Block mode - # Around the text #
         static void BlockMode(string text)
         {
             string blocks = new string('#', text.Length + 4);
@@ -64,8 +64,7 @@ class Program
                         chars[i] = char.ToUpper(chars[i]);
                     else
                         chars[i] = char.ToLower(chars[i]);
-
-                    // Toggle upperCase only if the current character is not a space
+                    
                     if (chars[i] != ' ')
                         upperCase = !upperCase;
                 }
