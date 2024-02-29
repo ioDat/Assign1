@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c479e6d9-f83a-435b-9280-32a4a14a5e05" name="Changes" comment="cleaned args&lt;2 text">
+    <list default="true" id="c479e6d9-f83a-435b-9280-32a4a14a5e05" name="Changes" comment="Fixed args so it takes in the whole inp">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TextDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TextDecorator.cs" afterDir="false" />
     </list>
@@ -20,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/dat_9/RiderProjects/Assignment1/TextDecorator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/dat_9/RiderProjects/Assignment1/TextDecorator.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -90,7 +91,7 @@
       <workItem from="1709226373970" duration="520000" />
       <workItem from="1709229591742" duration="2031000" />
       <workItem from="1709235596829" duration="7465000" />
-      <workItem from="1709244316390" duration="1907000" />
+      <workItem from="1709244316390" duration="2559000" />
     </task>
     <task id="LOCAL−00001" summary="1.st push">
       <option name="closed" value="true" />
@@ -148,7 +149,14 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1709246128516</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Fixed args so it takes in the whole inp">
+      <option name="closed" value="true" />
+      <created>1709246368331</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1709246368331</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +184,7 @@
     <MESSAGE value="Added helpprint" />
     <MESSAGE value="fixed helpprint" />
     <MESSAGE value="cleaned args&lt;2 text" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned args&lt;2 text" />
+    <MESSAGE value="Fixed args so it takes in the whole inp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed args so it takes in the whole inp" />
   </component>
 </project>

@@ -5,13 +5,13 @@ class Program
     static void Main(string[] args)
     {
         // unknown decoration argument or too few arguments => feedback from system
-        if (args.Length < 2)
+        if (args.Length < 2 || args[0].ToLower() == "help")
         {
-            Console.WriteLine("You need to put in 2 or more arguments ");
-            Console.WriteLine("Example: block Hello World");
+            HelpPrint();
             return;
         }
 
+        // Decoration cases
         string decorationType = args[0].ToLower();
         string text = string.Join(" ", args[1..]);
 
@@ -26,9 +26,6 @@ class Program
             case "pig":
                 PigMode(text);
                 break;
-            case "help":
-                HelpPrint();
-                break;
             default:
                 Console.WriteLine("Please pick between the decoration types: Block, Alternating or Pig");
                 break;
@@ -40,7 +37,7 @@ class Program
         {
             Console.WriteLine("Choose DECORATIONTYPE then write your TEXT");
             Console.WriteLine("Decoration alternatives: block, alternating, pig");
-            Console.WriteLine("I.E. block Hi Hiii");
+            Console.WriteLine("I.E. \"block Hi\" or \"block My gf a big yapper and a lil napper\"");
         }
 
         // Block mode - # Around text #
