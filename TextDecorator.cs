@@ -13,7 +13,7 @@ class Program
         }
 
         string decorationType = args[0].ToLower();
-        string text = string.Join(" ", args[1]);
+        string text = string.Join(" ", args[1..]);
 
         switch (decorationType)
         {

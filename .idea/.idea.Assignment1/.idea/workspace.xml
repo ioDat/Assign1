@@ -7,7 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c479e6d9-f83a-435b-9280-32a4a14a5e05" name="Changes" comment="Added helpprint">
+    <list default="true" id="c479e6d9-f83a-435b-9280-32a4a14a5e05" name="Changes" comment="cleaned args&lt;2 text">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TextDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TextDecorator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +56,7 @@
   <component name="RunManager">
     <configuration name="Assignment1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/net8.0/Assignment1.exe" />
-      <option name="PROGRAM_PARAMETERS" value="This is a test" />
+      <option name="PROGRAM_PARAMETERS" value="help" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin/Debug/net8.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -89,7 +90,7 @@
       <workItem from="1709226373970" duration="520000" />
       <workItem from="1709229591742" duration="2031000" />
       <workItem from="1709235596829" duration="7465000" />
-      <workItem from="1709244316390" duration="1584000" />
+      <workItem from="1709244316390" duration="1907000" />
     </task>
     <task id="LOCAL−00001" summary="1.st push">
       <option name="closed" value="true" />
@@ -133,7 +134,21 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1709245573845</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="fixed helpprint">
+      <option name="closed" value="true" />
+      <created>1709246078813</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1709246078813</updated>
+    </task>
+    <task id="LOCAL−00008" summary="cleaned args&lt;2 text">
+      <option name="closed" value="true" />
+      <created>1709246128516</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1709246128516</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +174,8 @@
     <MESSAGE value="D. AltMode" />
     <MESSAGE value="D. pigMode" />
     <MESSAGE value="Added helpprint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added helpprint" />
+    <MESSAGE value="fixed helpprint" />
+    <MESSAGE value="cleaned args&lt;2 text" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned args&lt;2 text" />
   </component>
 </project>
